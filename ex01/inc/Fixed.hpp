@@ -5,16 +5,20 @@ class Fixed
 {
 private:
 	int					m_value {0};
-	static const int	fractionalBits {8};
+	static const int	m_fractionalBits {8};
 
 public:
 	Fixed();
-	Fixed(const Fixed& fixed);
+	Fixed(const Fixed& copy);
+	Fixed(const int value);
+	Fixed(const float value);
 	Fixed& operator= (const Fixed& fixed);
 	~Fixed();
 
 	int getRawBits() const;
-	void setRawBits(int const raw);
+	void setRawBits(const int raw);
+	float toFloat() const;
+	int toInt() const;
 };
 
 #endif
