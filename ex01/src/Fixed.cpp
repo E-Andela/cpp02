@@ -58,3 +58,9 @@ int Fixed::toInt() const
 {
 	return (m_value * pow(2, -m_fractionalBits));
 }
+
+std::ostream& operator<<(std::ostream& out, Fixed& fixed)
+{
+	out << fixed.toFloat();
+	return (out);
+}

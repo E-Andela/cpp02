@@ -14,4 +14,6 @@ int main()
 
 	std::cout << a.toInt() << std::endl;
 	std::cout << b.toInt() << std::endl;
+
+	std::cout << a << std::endl;
 }
