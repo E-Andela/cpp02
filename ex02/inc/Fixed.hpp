@@ -43,10 +43,10 @@ public:
 	Fixed	operator--(int);
 
 	// Min / max functions
-	static Fixed& min(Fixed& a, Fixed& b);
-	static const Fixed& min(const Fixed& a, const Fixed& b);
-	static Fixed& max(Fixed& a, Fixed& b);
-	static const Fixed& max(const Fixed& a, const Fixed& b);
+	static Fixed&		min(Fixed& a, Fixed& b);
+	static const Fixed&	min(const Fixed& a, const Fixed& b);
+	static Fixed&		max(Fixed& a, Fixed& b);
+	static const Fixed&	max(const Fixed& a, const Fixed& b);
 };
 
 std::ostream& operator<<(std::ostream& out, const Fixed& fixed);
